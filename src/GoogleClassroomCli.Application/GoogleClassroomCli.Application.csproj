@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GoogleClassroomCli.Domain\GoogleClassroomCli.Domain.csproj" />
+    <ProjectReference Include="..\GoogleClassroomCli.Infrastructure\GoogleClassroomCli.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
