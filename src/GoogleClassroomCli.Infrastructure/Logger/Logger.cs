@@ -1,4 +1,4 @@
-﻿using GoogleClassroom.Infrastructure.Models;
+﻿using GoogleClassroomCli.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;

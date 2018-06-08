@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GoogleClassroom.Infrastructure.Models
+namespace GoogleClassroomCli.Infrastructure.Models
 {
     public class Log
     {
