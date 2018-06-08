@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GoogleClassroomCli.Domain
 {
-    public class Teacher
+    public class Teacher : IEntity
     {
         public string Id { get; set; }
         public string Name { get; set; }
