@@ -75,7 +75,7 @@ namespace GoogleClassroomCli.Infrastructure
         {
             if (_logList.Count > 0)
             {
-                if (!Directory.Exists(LogPath))
+                if (!Directory.Exists(LogPath) && !string.IsNullOrEmpty(LogPath))
                 {
                     Directory.CreateDirectory(LogPath);
                 }
