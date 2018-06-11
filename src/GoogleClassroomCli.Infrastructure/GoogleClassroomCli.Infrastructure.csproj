@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Classroom.v1" Version="1.34.0.1236" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GoogleClassroomCli.Domain\GoogleClassroomCli.Domain.csproj" />
   </ItemGroup>
 
