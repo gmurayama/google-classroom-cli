@@ -21,6 +21,7 @@ namespace GoogleClassroomCli.Service
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false)
+                .AddJsonFile("appsettings.development.json", optional: true, reloadOnChange: true)
                 .Build();
             
             var courseService = new CourseService(
