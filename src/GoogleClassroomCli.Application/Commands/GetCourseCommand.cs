@@ -5,7 +5,7 @@ namespace GoogleClassroomCli.Application.Commands
 {
     public class GetCourseCommand
     {
-        private CourseService _courseService;
+        private readonly CourseService _courseService;
         private string _courseId;
 
         public Course Result { get; private set; }

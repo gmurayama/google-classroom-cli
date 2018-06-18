@@ -8,7 +8,7 @@ namespace GoogleClassroomCli.Application.Commands
 {
     public class CreateCourseCommand
     {
-        private CourseService _courseService;
+        private readonly CourseService _courseService;
         private Course _course;
 
         public CreateCourseCommand(CourseService couseService, Course course)
