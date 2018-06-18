@@ -1,4 +1,6 @@
 ﻿using CommandLine;
+using GoogleClassroomCli.Application.Commands;
+using GoogleClassroomCli.Infrastructure.GoogleClassroom;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,5 +16,20 @@ namespace GoogleClassroomCli.Service.Options
         public string CourseId { get; set; }
         [Option(HelpText = "E-mail used to perform the action of add student to course")]
         public string ImpersonatedEmail { get; set; }
+        public void ExecuteCommand(CourseService courseService)
+        {
+            var addStudentToCourseCommand = new AddStudentToCourseCommand(
+                        courseService: courseService,
+                        courseId: CourseId,
+                        studentEmail: Email
+                    );
+
+            addStudentToCourseCommand.Execute();
+            var student = addStudentToCourseCommand.Result;
+
+            Console.WriteLine("ID: {0}", student.Id);
+            Console.WriteLine("Name: {0}", student.Name);
+            Console.WriteLine("E-mail: {0}", student.Email);
+        }
     }
 }
